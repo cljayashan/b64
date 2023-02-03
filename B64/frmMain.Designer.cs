@@ -1,6 +1,6 @@
 ﻿namespace B64
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -35,6 +35,7 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.ddlFileType = new System.Windows.Forms.ComboBox();
             this.btnClose = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -55,9 +56,9 @@
             // txtPath
             // 
             this.txtPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPath.Location = new System.Drawing.Point(12, 59);
+            this.txtPath.Location = new System.Drawing.Point(177, 22);
             this.txtPath.Name = "txtPath";
-            this.txtPath.Size = new System.Drawing.Size(604, 24);
+            this.txtPath.Size = new System.Drawing.Size(446, 24);
             this.txtPath.TabIndex = 1;
             // 
             // btnSave
@@ -85,7 +86,7 @@
             "pdf",
             "rtf",
             "docx"});
-            this.ddlFileType.Location = new System.Drawing.Point(12, 89);
+            this.ddlFileType.Location = new System.Drawing.Point(138, 59);
             this.ddlFileType.Name = "ddlFileType";
             this.ddlFileType.Size = new System.Drawing.Size(121, 26);
             this.ddlFileType.TabIndex = 3;
@@ -101,11 +102,21 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // Form1
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Target File Ext : ";
+            // 
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(628, 164);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ddlFileType);
             this.Controls.Add(this.btnSave);
@@ -113,7 +124,7 @@
             this.Controls.Add(this.btnOpen);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Base64 String to File";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -131,6 +142,7 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.ComboBox ddlFileType;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label label1;
     }
 }
 

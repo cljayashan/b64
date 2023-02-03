@@ -12,11 +12,11 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace B64
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
         string filePath = "";
         string ext;
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
         }
